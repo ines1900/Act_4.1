@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>talan académie</title>
+  </head>
+
+  <body>
+<p>
+   <a id="ta" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.talan-academy.com/"/>
+   afficher du contenu</p>
+<button onclick="Affichage()">Afficher les attributes</button>
+<script>function Affichage() {
+alert (document.getElementById('ta').type)
+alert (document.getElementById('ta').hreflang)
+alert (document.getElementById('ta').rel)
+alert (document.getElementById('ta').target)
+alert (document.getElementById('ta').href)
+};
+</script>
+
+  </body>
+</html>
