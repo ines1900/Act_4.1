@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<evenement>
+	<titre>soirée collecte de fond</titre>
+	<theme>informatique</theme>
+	<date>08-01-2013</date>
+	<lieu capacite="300">Gammarth the residence</lieu>
+	<budget devise="EUR">300DNT</budget><!--DNT, EUR..!-->
+    <activite id="1">
+        <titre1>acceuil des invités et présentation de l'objectif de l'evenement</titre1>
+        <duree1>10 minutes</duree1>
+     </activite>
+     <activite id ="2">
+        <titre1>intervention du président</titre1>
+        <duree1>5 minutes</duree1>
+     </activite>
+     <activite id="3">
+        <titre1>intervention du président</titre1>
+        <duree1>5 minutes</duree1>
+     </activite>
+  <Participants>
+      <invites>
+         <invite id="1">
+            <nom>sami</nom>
+            <identifiant>01</identifiant>
+            <nom_etablissement>actia</nom_etablissement>
+         </invite>
+         <invite id="2">
+            <nom>lisa</nom>
+            <identifiant>02</identifiant>
+            <nom_etablissement>vista</nom_etablissement>
+         </invite>
+      </invites>
+      <intervenants>
+         <intervenant id="1">
+            <nom>monsieur Bahjet</nom>
+            <identifiant>05</identifiant>
+            <nom_etablissement>talan</nom_etablissement>
+            <langue_intervention>francais</langue_intervention>
+         </intervenant>
+         <intervenant id="2">
+            <nom>monsieur Mustapha</nom>
+            <identifiant>06</identifiant>
+            <nom_etablissement>talan</nom_etablissement>
+            <langue_intervention>francais</langue_intervention>
+         </intervenant>
+      </intervenants>
+</Participants>
+</evenement>
