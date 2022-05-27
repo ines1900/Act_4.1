@@ -1,0 +1,3 @@
+path1 = "/Evenement/date"
+path2 = "/Evenement/budget"
+path3 = "/Evenement/invites/invites/invite[2]/nom"
