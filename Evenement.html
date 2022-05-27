@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenement</title>
+  </head>
+
+  <body>
+    <h1><b>le titre de l'évènement:</b> <span id="A1"></span></h1>
+    <div>
+    <h2>Cliquer pour afficher le titre de l'évenement</h2>
+    <button type="button" onclick="loadDoc()">Request data from XML file</button>
+    </div>
+    
+    <script>
+      function loadDoc(url) {
+       var xhr = new XMLHttpRequest();
+       xhr.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 200) {
+            document.getElementByTagName("title")[0].innerHTML = this.responseText;
+         }
+       <!--envoi de requête-->
+       xhr.open("GET", URL, true);
+       xhr.send();
+       }  
+    </script>
+
+
+  </body>
+</html>
