@@ -1,0 +1,57 @@
+{
+      "Evenement": {
+         "titre": "soirée collecte de fond",
+         "theme": "informatique",
+         "date": "30/05/2022",
+         "lieu": "Gammarth the residence",
+         "capacité": "300 personnes",
+         "montan": "300DNT",
+         "activites": {
+            "activite":[
+               {
+                  "id" : ="1"
+                  "titr1": "acceuil des invités et présentation de l'objectif de l'evenement",
+                  "duree1": "10 minutes"
+               },
+               {
+                  "id" : ="2"
+                  "titr2": "intervention du président",
+                  "duree2": "5 minutes"
+               },
+            ]
+         },
+         "invites": {
+            "invites": {
+               "invite": [
+                  {
+                     "id": "1",
+                     "nom": "sami",
+                     "nom_etablissement": "actia"
+                  },
+                  {
+                     "id": "2",
+                     "nom": "lisa",
+                     "nom_etablissement": "vista"
+                  }
+               ]
+            },
+            "intervenants": {
+               "intervenant": [
+                  {
+                    "id": "01",
+                     "nom": "monsieur Bahjet",
+                     "nom_etablissement": "talan",
+                     "langue": "francais"
+                  },
+                  {
+                    "id": "02",
+                     "nom": "Mustapha",
+                     "nom_etablissement": "talan",
+                     "langue": "francais"
+                  }
+               ]
+            }
+         }
+      }
+   }
+}
