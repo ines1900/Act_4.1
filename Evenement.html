@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -8,25 +7,30 @@
 
   <body>
     <h1><b>le titre de l'évènement:</b> <span id="A1"></span></h1>
-    <div>
+
+    <div id="btn">
     <h2>Cliquer pour afficher le titre de l'évenement</h2>
     <button type="button" onclick="loadDoc()">Request data from XML file</button>
     </div>
-    
+
     <script>
       function loadDoc() {
        var xhr = new XMLHttpRequest();
        xhr.onreadystatechange = function() {
-         if (this.readyState == 4 && this.status == 200) {
-            document.getElementByTagName("title")[0].innerHTML = this.responseText;
+         if (xhr.readyState == 4 && xhr.status == 200) {
+           is=xhr.responseXML
+            document.getElementById("btn").innerHTML=is.getElementsByTagName('titre').item(0).textContent;
+         }else if (xhr.readyState == 4 && xhr.status == 404){
+          alert('Erreur 404 :/');
          }
-       <!--envoi de requête-->
+       }
        xhr.open("GET", "evenement xml.xml", true);
-       xhr.send();
-       }  
-      }
-    </script>
 
+       xhr.send();
+     }
+       <!--envoi de requête-->
+
+    </script>
 
   </body>
 </html>
